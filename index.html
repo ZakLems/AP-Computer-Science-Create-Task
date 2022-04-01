@@ -4,7 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>School Buddy</title>
+		<title>WISE Pather</title>
+		<script type="text/javascript" src="../AP-Computer-Science-Create-Task/js/userInformation.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name"><br>
+
+			<label for="studentID">Student ID:</label>
+			<input type="number" name="studentID" id="studentID"><br>
+			
+			<label for="gradeLevel">Grade Level:</label>
+			<input type="number" name="gradeLevel" id="gradeLevel" min="9" max="11"><br>
+
+			<input type="button" value="Submit" onclick="
+			document.getElementById('output').innerText = JSON.stringify(new userBasics(document.getElementById('name').value, document.getElementById('gradeLevel').value, document.getElementById('studentID').value, '','',''))
+			">
+		</form>
+		<p id="output"></p>
+	</body>
 </html>

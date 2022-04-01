@@ -1,9 +1,10 @@
-function userBasics(){
-    this.name;
-    this.gradeLevel;
-    this.ID;
-    this.coursesTaken;
-    this.totalCredits
+function userBasics(name, gradeLevel, studentID, coursesTaken, interests, totalCredits){
+    this.name = name;
+    this.gradeLevel = gradeLevel;
+    this.studentID = studentID;
+    this.coursesTaken = coursesTaken;
+    this.interests = interests;
+    this.totalCredits = totalCredits;
 }
 
 function course() {
@@ -16,3 +17,6 @@ function course() {
     this.department;
     this.finalGrade;
 }
+
+dave = new userBasics('raza', 11, 100342969, '','','')
+console.log(dave)
