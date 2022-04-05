@@ -17,6 +17,3 @@ function course() {
     this.department;
     this.finalGrade;
 }
-
-dave = new userBasics('raza', 11, 100342969, '','','')
-console.log(dave)

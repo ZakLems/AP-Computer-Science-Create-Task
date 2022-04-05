@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="../AP-Computer-Science-Create-Task/js/userInformation.js"></script>
 	</head>
 	<body>
-		<form>
+		<form id="basicInfo">
 			<label for="name">Name:</label>
 			<input type="text" name="name" id="name"><br>
 
@@ -16,7 +16,12 @@
 			<input type="number" name="studentID" id="studentID"><br>
 			
 			<label for="gradeLevel">Grade Level:</label>
-			<input type="number" name="gradeLevel" id="gradeLevel" min="9" max="11"><br>
+			<select name="gradeLevel" id="gradeLevel">
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
 
 			<input type="button" value="Submit" onclick="
 			document.getElementById('output').innerText = JSON.stringify(new userBasics(document.getElementById('name').value, document.getElementById('gradeLevel').value, document.getElementById('studentID').value, '','',''))
