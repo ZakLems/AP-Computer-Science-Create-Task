@@ -17,11 +17,13 @@
 			
 			<label for="gradeLevel">Grade Level:</label>
 			<select name="gradeLevel" id="gradeLevel">
+				<option value=""></option>
+				<option value=">hs">Lower than 9th Grade</option>
 				<option value="9">9</option>
 				<option value="10">10</option>
 				<option value="11">11</option>
 				<option value="12">12</option>
-			</select>
+			</select><br>
 
 			<input type="button" value="Submit" onclick="
 			document.getElementById('output').innerText = JSON.stringify(new userBasics(document.getElementById('name').value, document.getElementById('gradeLevel').value, document.getElementById('studentID').value, '','',''))
