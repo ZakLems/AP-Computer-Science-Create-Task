@@ -1,0 +1,902 @@
+[
+	{
+		"name": "AP Studio Art 2-D",
+		"id": "APA",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A2",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "Art 1",
+		"id": "ART1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Art 2",
+		"id": "ART2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Ceramics 1",
+		"id": "C1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Ceramics 2",
+		"id": "C2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "C1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Computer Graphics 1",
+		"id": "CG1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Computer Graphics 2",
+		"id": "CG2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "CG1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Drama 1",
+		"id": "D1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Drama 2",
+		"id": "D2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "D1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Drama 3",
+		"id": "D3",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "D2",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Drawing and Painting 1",
+		"id": "DP1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Drawing and Painting 2",
+		"id": "DP2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "DP1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Media Production 1",
+		"id": "MP1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Media Production 2",
+		"id": "MP2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Photography 1",
+		"id": "PH1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Photography 2",
+		"id": "PH2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "PH1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Sculpture 1",
+		"id": "S1",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Sculpture 2",
+		"id": "S2",
+		"department": "Art",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "S1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Advanced Accounting",
+		"id": "AA",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "PA",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Business Law 1",
+		"id": "BL1",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Business Law 2",
+		"id": "BL2",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "BL1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Entrepreneurship 1",
+		"id": "E1",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Entrepreneurship 2",
+		"id": "E2",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Entrepreneurship 3",
+		"id": "E3",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Principles of Accounting",
+		"id": "PA",
+		"department": "Business",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "African American Literature",
+		"id": "ALIT",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E10",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "AP English Language & Composition",
+		"id": "APLA",
+		"department": "English",
+		"graduationRequirement": "English 11",
+		"prerequisites": "E10",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP English Literature and Composition",
+		"id": "APLI",
+		"department": "English",
+		"graduationRequirement": "English 12",
+		"prerequisites": "E11",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "College Summit",
+		"id": "CS",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Creative Writing",
+		"id": "CW",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E9",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Debate",
+		"id": "D",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "SP",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "English 10",
+		"id": "E10",
+		"department": "English",
+		"graduationRequirement": "English 10",
+		"prerequisites": "E9",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "English 11",
+		"id": "E11",
+		"department": "English",
+		"graduationRequirement": "English 11",
+		"prerequisites": "E10",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "English 12",
+		"id": "E12",
+		"department": "English",
+		"graduationRequirement": "English 12",
+		"prerequisites": "E11",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "English 9",
+		"id": "E9",
+		"department": "English",
+		"graduationRequirement": "English 9",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "Journalism 1",
+		"id": "J1",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Journalism 2",
+		"id": "J2",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "J1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Speech",
+		"id": "SP",
+		"department": "English",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Fashion Design 1",
+		"id": "FD1",
+		"department": "FACS",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Fashion Design 2",
+		"id": "FD2",
+		"department": "FACS",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Financial Literacy",
+		"id": "FIL",
+		"department": "FACS",
+		"graduationRequirement": "Financial Literacy",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Food and Nutrition",
+		"id": "FN",
+		"department": "FACS",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "International Cuisine",
+		"id": "INTC",
+		"department": "FACS",
+		"graduationRequirement": "Elective",
+		"prerequisites": "FN",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Family Health",
+		"id": "FH",
+		"department": "Health/PE",
+		"graduationRequirement": "Elective",
+		"prerequisites": "H1",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Health 1",
+		"id": "H1",
+		"department": "Health/PE",
+		"graduationRequirement": "Health",
+		"prerequisites": "",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Heath 2",
+		"id": "H2",
+		"department": "Health/PE",
+		"graduationRequirement": "Elective",
+		"prerequisites": "H1",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Lifetime Sports",
+		"id": "LS",
+		"department": "Health/PE",
+		"graduationRequirement": "Elective",
+		"prerequisites": "PF",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Personal Fitness",
+		"id": "PF",
+		"department": "Health/PE",
+		"graduationRequirement": "Physical Education",
+		"prerequisites": "",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Sports Medicine",
+		"id": "SM",
+		"department": "Health/PE",
+		"graduationRequirement": "Elective",
+		"prerequisites": "H1",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Team Sports",
+		"id": "TS",
+		"department": "Health/PE",
+		"graduationRequirement": "Elective",
+		"prerequisites": "PF",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Algebra 1",
+		"id": "A1",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Algebra 2",
+		"id": "A2",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "G",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "AP Calculus AB",
+		"id": "APC",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "PC",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP Statistics",
+		"id": "APS",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "A2",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "Geometry",
+		"id": "G",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "A1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Pre Calculus",
+		"id": "PC",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "A2",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "Probability",
+		"id": "P",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "A2",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Trigonometry",
+		"id": "T",
+		"department": "Math",
+		"graduationRequirement": "Math",
+		"prerequisites": "A2",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Band 1",
+		"id": "B1",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Band 2",
+		"id": "B2",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Band 3",
+		"id": "B3",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Band 4",
+		"id": "B4",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Dance 1",
+		"id": "D1",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Dance 2",
+		"id": "D2",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Dance 3",
+		"id": "D3",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Dance 4",
+		"id": "D4",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Guitar",
+		"id": "GU",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Orchestra 1",
+		"id": "O1",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Orchestra 2",
+		"id": "O2",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Orchestra 3",
+		"id": "O3",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Orchestra 4",
+		"id": "O4",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Piano",
+		"id": "PI",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Recording Technology",
+		"id": "RT",
+		"department": "Music/Dance",
+		"graduationRequirement": "Fine Art",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "AP Biology",
+		"id": "APB",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "C",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP Environmental Science",
+		"id": "APES",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "ES",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP Physics",
+		"id": "APP",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "P",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "Biology",
+		"id": "B",
+		"department": "Science",
+		"graduationRequirement": "Biology",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "Chemistry",
+		"id": "C",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "B",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "Environmental Science",
+		"id": "ES",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "B",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Physics",
+		"id": "P",
+		"department": "Science",
+		"graduationRequirement": "Science",
+		"prerequisites": "B",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "AP Human Geography",
+		"id": "APHG",
+		"department": "Soc Studies",
+		"graduationRequirement": "Elective",
+		"prerequisites": "WH",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP Psychology",
+		"id": "APPS",
+		"department": "Soc Studies",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E10",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP United States Government and Politics",
+		"id": "APG",
+		"department": "Soc Studies",
+		"graduationRequirement": "Government",
+		"prerequisites": "UH",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP World History",
+		"id": "APWH",
+		"department": "Soc Studies",
+		"graduationRequirement": "World History",
+		"prerequisites": "G",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "Government",
+		"id": "G",
+		"department": "Soc Studies",
+		"graduationRequirement": "Government",
+		"prerequisites": "UH",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "Practical Law",
+		"id": "PL",
+		"department": "Soc Studies",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E10",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Psychology",
+		"id": "PS",
+		"department": "Soc Studies",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E10",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "Sociology",
+		"id": "S",
+		"department": "Soc Studies",
+		"graduationRequirement": "Elective",
+		"prerequisites": "E10",
+		"term": "S",
+		"type": "regular"
+	},
+	{
+		"name": "U.S. History",
+		"id": "UH",
+		"department": "Soc Studies",
+		"graduationRequirement": "U.S. History",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "World History",
+		"id": "WH",
+		"department": "Soc Studies",
+		"graduationRequirement": "World History",
+		"prerequisites": "G",
+		"term": "FY",
+		"type": "honorsAvailable"
+	},
+	{
+		"name": "AP Computer Science A",
+		"id": "APCSA",
+		"department": "Technology",
+		"graduationRequirement": "Elective",
+		"prerequisites": "APCS",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "AP Computer Science Principles",
+		"id": "APCS",
+		"department": "Technology",
+		"graduationRequirement": "Elective",
+		"prerequisites": "FCS",
+		"term": "FY",
+		"type": "AP"
+	},
+	{
+		"name": "Foundations of Computer Science",
+		"id": "FCS",
+		"department": "Technology",
+		"graduationRequirement": "Technology Education",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Foundations of Tech",
+		"id": "FT",
+		"department": "Technology",
+		"graduationRequirement": "Technology Education",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Office Applications",
+		"id": "OA",
+		"department": "Technology",
+		"graduationRequirement": "Elective",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "French 1",
+		"id": "F1",
+		"department": "World Lang",
+		"graduationRequirement": "Language",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "French 2",
+		"id": "F2",
+		"department": "World Lang",
+		"graduationRequirement": "Language",
+		"prerequisites": "F1",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "French 3",
+		"id": "F3",
+		"department": "World Lang",
+		"graduationRequirement": "Language",
+		"prerequisites": "F2",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Spanish 1",
+		"id": "S1",
+		"department": "World Lang",
+		"graduationRequirement": "Language",
+		"prerequisites": "",
+		"term": "FY",
+		"type": "regular"
+	},
+	{
+		"name": "Spanish 2",
+		"id": "S2",
+		"department": "World Lang",
+		"graduationRequirement": "Language",
+		"prerequisites": "S1",
+		"term": "FY",
+		"type": "regular"
+	}
+]
