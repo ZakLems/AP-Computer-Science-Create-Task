@@ -34,11 +34,12 @@ function userBasics(name, gradeLevel, studentID, coursesTaken) {
 	this.name = name;
 	this.gradeLevel = gradeLevel;
 	this.studentID = studentID;
-	this.coursesTaken = coursesTaken;
 }
-var userInfo = new userBasics("Razak Diallo", 9, 100342969, ["A1", "B"]);
+var userInfo = new userBasics("Razak Diallo", 9, 100342969);
 
-//find prerequisites
+//add courses
+var userCourses = { preHighschool: [], freshman: [], junior: [], senior: [] };
+
 const foundArray = [];
 for (let i = 0; i < userInfo.coursesTaken.length; i++) {
 	console.log(userInfo.coursesTaken[i]);
