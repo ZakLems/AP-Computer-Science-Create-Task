@@ -1,4 +1,5 @@
 const fs = require("fs");
+const prompt = require("prompt-sync")({ sigint: true });
 
 //Definitions
 let data;
