@@ -1,5 +1,5 @@
 const fs = require("fs");
-const prompt = require("prompt-sync")({ sigint: true });
+const prompt = require("prompt-sync")();
 
 //Definitions
 let data;
@@ -11,7 +11,7 @@ try {
 	console.log(err);
 }
 
-var graduationRequirements = [
+const graduationRequirements = [
 	"Fine Art",
 	"English 11",
 	"English 12",
@@ -36,19 +36,28 @@ function userBasics(name, gradeLevel, studentID, coursesTaken) {
 	this.gradeLevel = gradeLevel;
 	this.studentID = studentID;
 }
-var userInfo = new userBasics("Razak Diallo", 9, 100342969);
+/*let userInfo = new userBasics(prompt("Full Name: "), prompt("Grade: "), prompt("Student ID: "));*/
+const userInfo = new userBasics("Razak Diallo", 9, 100342969);
+console.log(userInfo);
 
 //add courses
-var userCourses = { preHighschool: [], freshman: [], junior: [], senior: [] };
-
-const foundArray = [];
-for (let i = 0; i < userInfo.coursesTaken.length; i++) {
-	console.log(userInfo.coursesTaken[i]);
-	found = data.findIndex(function (course, index) {
-		if (course.id == userInfo.coursesTaken[i]) {
+let userCourses = { preHighschool: [], freshman: [], junior: [], senior: [] };
+function courseIDtoCourseOBJ(courseID) {
+	foundIndex = data.findIndex(function (course, index) {
+		if (course.id == courseID) {
 			return true;
 		}
 	});
-	foundArray.push(data[found]);
+	let found = data[foundIndex];
+	return found;
 }
-console.log(foundArray);
+function courseArraytoCourseArrayOBJ(courseArray) {
+	newArray = [];
+	for (let i = 0; i < courseArray.length; i++) {
+		newArray.push(courseIDtoCourseOBJ(courseArray[i]));
+	}
+	return newArray;
+}
+
+let preHighschool = ["A1", "B"];
+console.log(courseArraytoCourseArrayOBJ(preHighschool));
