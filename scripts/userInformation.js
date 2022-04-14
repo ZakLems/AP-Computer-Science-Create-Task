@@ -36,11 +36,15 @@ function userBasics(name, gradeLevel, studentID, coursesTaken) {
 	this.gradeLevel = gradeLevel;
 	this.studentID = studentID;
 }
-/*let userInfo = new userBasics(prompt("Full Name: "), prompt("Grade: "), prompt("Student ID: "));*/
 const userInfo = new userBasics("Razak Diallo", 9, 100342969);
 console.log(userInfo);
 
 //add courses
+function checkPrerequisite(course, courseList) {
+	console.log(this);
+	return this.id.includes(courseList[0]);
+}
+let currentSelectedYear = 0;
 let userCourses = { preHighschool: [], freshman: [], junior: [], senior: [] };
 function courseIDtoCourseOBJ(courseID) {
 	foundIndex = data.findIndex(function (course, index) {
@@ -59,5 +63,8 @@ function courseArraytoCourseArrayOBJ(courseArray) {
 	return newArray;
 }
 
-let preHighschool = ["A1", "B"];
-console.log(courseArraytoCourseArrayOBJ(preHighschool));
+userCourses.preHighschool = ["A1", "B"];
+userCourses.preHighschool = courseArraytoCourseArrayOBJ(userCourses.preHighschool);
+currentSelectedYear += 1;
+
+console.log(data.filter((course) => course.id == userCourses.preHighschool[0]));
