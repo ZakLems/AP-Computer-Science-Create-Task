@@ -4,7 +4,7 @@
 		"id": "APA",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A2",
+		"prerequisites": "ART2",
 		"term": "FY",
 		"type": "AP"
 	},
@@ -22,7 +22,7 @@
 		"id": "ART2",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A1",
+		"prerequisites": "ART1",
 		"term": "FY",
 		"type": "regular"
 	},
@@ -31,7 +31,7 @@
 		"id": "C1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A1",
+		"prerequisites": "ART1",
 		"term": "FY",
 		"type": "regular"
 	},
@@ -49,7 +49,7 @@
 		"id": "CG1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A1",
+		"prerequisites": "ART1",
 		"term": "FY",
 		"type": "regular"
 	},
@@ -94,7 +94,7 @@
 		"id": "DP1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A1",
+		"prerequisites": "ART1",
 		"term": "FY",
 		"type": "regular"
 	},
@@ -148,7 +148,7 @@
 		"id": "S1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
-		"prerequisites": "A1",
+		"prerequisites": "ART1",
 		"term": "FY",
 		"type": "regular"
 	},
