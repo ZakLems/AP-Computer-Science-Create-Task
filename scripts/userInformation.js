@@ -1,7 +1,7 @@
 const fs = require("fs");
 const prompt = require("prompt-sync")();
 
-//Definitions
+//Referencing course roster
 let data;
 try {
 	data = fs.readFileSync("./scripts/data/courseData.json", "utf-8");
@@ -10,25 +10,6 @@ try {
 } catch (err) {
 	console.log(err);
 }
-
-const graduationRequirements = [
-	"Fine Art",
-	"English 11",
-	"English 12",
-	"English 10",
-	"English 9",
-	"Financial Literacy",
-	"Health",
-	"Physical Education",
-	"Math",
-	"Science",
-	"Biology",
-	"Government",
-	"World History",
-	"U.S. History",
-	"Technology Education",
-	"Language",
-];
 
 //basic user information
 function userBasics(name, gradeLevel, studentID, coursesTaken) {
@@ -43,7 +24,25 @@ console.log(userInfo);
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
 }
-function selectableCourses(courses, year) {
+function courseIDtoCourseOBJ(courseID) {
+	foundIndex = data.findIndex(function (course, index) {
+		if (course.id == courseID) {
+			return true;
+		}
+	});
+	let found = data[foundIndex];
+	return found;
+}
+function courseArraytoCourseArrayOBJ(courseArray) {
+	newArray = [];
+	for (let i = 0; i < courseArray.length; i++) {
+		newArray.push(courseIDtoCourseOBJ(courseArray[i]));
+	}
+	return newArray;
+}
+
+//Validation (prerequisites, grade level)
+function selectableCoursesBasedOnPrerequisites(courses, year) {
 	if (year == 1) {
 		allCourses = courses["preHighschool"];
 	} else if (year == 2) {
@@ -66,22 +65,28 @@ function selectableCourses(courses, year) {
 
 	return preRequisiteList.filter(onlyUnique);
 }
-function courseIDtoCourseOBJ(courseID) {
-	foundIndex = data.findIndex(function (course, index) {
-		if (course.id == courseID) {
-			return true;
-		}
-	});
-	let found = data[foundIndex];
-	return found;
-}
-function courseArraytoCourseArrayOBJ(courseArray) {
-	newArray = [];
-	for (let i = 0; i < courseArray.length; i++) {
-		newArray.push(courseIDtoCourseOBJ(courseArray[i]));
-	}
-	return newArray;
-}
+
+function selectablecoursesBasedOnGradeLevel() {}
+
+const graduationRequirements = [
+	"Fine Art",
+	"English 11",
+	"English 12",
+	"English 10",
+	"English 9",
+	"Financial Literacy",
+	"Health",
+	"Physical Education",
+	"Math",
+	"Science",
+	"Biology",
+	"Government",
+	"World History",
+	"U.S. History",
+	"Technology Education",
+	"Language",
+];
+
 var currentSelectedYear = 0;
 let userCourses = { preHighschool: ["piss"], freshman: [], sophomore: [], junior: [], senior: [] };
 
@@ -102,15 +107,15 @@ function addCourses(coursesToAdd) {
 	//add selected courses as object as refrenced from data variable to master course list
 	userCourses[currentSelectedYearName] = courseArraytoCourseArrayOBJ(coursesToAdd);
 
-	//determine if user can take selected courses based on prerequisties. Remove if lacking required prerequisites.
+	//determine if user can take selected courses based on prerequisties and grades allowed to take course. Remove if lacking required prerequisites or not in grade.
 	let deletionList = [];
 	for (let i = 0; i < userCourses[currentSelectedYearName].length; i++) {
 		if (
-			selectableCourses(userCourses, currentSelectedYear)
+			selectableCoursesBasedOnPrerequisites(userCourses, currentSelectedYear)
 				.map((courses) => courses.id)
 				.includes(userCourses[currentSelectedYearName][i].id)
 		) {
-			console.log(`${userCourses[currentSelectedYearName][i].name} is allowed`);
+			console.log(`${userCourses[currentSelectedYearName][i].name} has the required prerequisites`);
 		} else {
 			console.log(
 				`${userCourses[currentSelectedYearName][i].name} doesn't have the required prerequisites! Removing from list.`
@@ -129,6 +134,7 @@ function addCourses(coursesToAdd) {
 		);
 	}
 }
-addCourses(["A1", "B", "G"]);
-console.log(userCourses.preHighschool);
-currentSelectedYear += 1;
+for (let i = 0; i < 1; i++) {
+	addCourses(["A1", "B", "G"]);
+	currentSelectedYear += 1;
+}
