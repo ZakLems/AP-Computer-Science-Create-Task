@@ -83,62 +83,52 @@ function courseArraytoCourseArrayOBJ(courseArray) {
 	return newArray;
 }
 var currentSelectedYear = 0;
-let userCourses = { preHighschool: [], freshman: [], sophomore: [], junior: [], senior: [] };
+let userCourses = { preHighschool: ["piss"], freshman: [], sophomore: [], junior: [], senior: [] };
 
-//add courses from before highschool
-userCourses.preHighschool = courseArraytoCourseArrayOBJ(["A1", "B", "G"]);
+function addCourses(coursesToAdd) {
+	//determine current selected year name
+	let currentSelectedYearName;
+	if (currentSelectedYear == 0) {
+		currentSelectedYearName = "preHighschool";
+	} else if (currentSelectedYear == 1) {
+		currentSelectedYearName = "freshman";
+	} else if (currentSelectedYear == 2) {
+		currentSelectedYearName = "sophomore";
+	} else if (currentSelectedYear == 3) {
+		currentSelectedYearName = "junior";
+	} else if (currentSelectedYear == 4) {
+		currentSelectedYearName = "senior";
+	}
+	//add selected courses as object as refrenced from data variable to master course list
+	userCourses[currentSelectedYearName] = courseArraytoCourseArrayOBJ(coursesToAdd);
 
-var deletionList = [];
-for (let i = 0; i < userCourses.preHighschool.length; i++) {
-	if (
-		selectableCourses(userCourses, currentSelectedYear)
-			.map((courses) => courses.id)
-			.includes(userCourses.preHighschool[i].id)
-	) {
-		console.log(`${userCourses.preHighschool[i].name} is allowed`);
-	} else {
-		console.log(`${userCourses.preHighschool[i].name} doesn't have the required prerequisites! Removing from list.`);
-		deletionList.push(userCourses.preHighschool[i].name);
+	//determine if user can take selected courses based on prerequisties. Remove if lacking required prerequisites.
+	let deletionList = [];
+	for (let i = 0; i < userCourses[currentSelectedYearName].length; i++) {
+		if (
+			selectableCourses(userCourses, currentSelectedYear)
+				.map((courses) => courses.id)
+				.includes(userCourses[currentSelectedYearName][i].id)
+		) {
+			console.log(`${userCourses[currentSelectedYearName][i].name} is allowed`);
+		} else {
+			console.log(
+				`${userCourses[currentSelectedYearName][i].name} doesn't have the required prerequisites! Removing from list.`
+			);
+			deletionList.push(userCourses[currentSelectedYearName][i].name);
+		}
+	}
+	for (let i = 0; i < deletionList.length; i++) {
+		userCourses[currentSelectedYearName].splice(
+			userCourses[currentSelectedYearName].findIndex(function (course, index) {
+				if (course.id == deletionList[i].id) {
+					return true;
+				}
+			}),
+			1
+		);
 	}
 }
-for (let i = 0; i < deletionList.length; i++) {
-	userCourses.preHighschool.splice(
-		userCourses.preHighschool.findIndex(function (course, index) {
-			if (course.id == deletionList[i].id) {
-				return true;
-			}
-		}),
-		1
-	);
-}
-currentSelectedYear += 1;
-
-//add courses from freshman
-userCourses.freshman = courseArraytoCourseArrayOBJ(["C", "G", "A2", "ART2"]);
-
-var deletionList = [];
-for (let i = 0; i < userCourses.freshman.length; i++) {
-	if (
-		selectableCourses(userCourses, currentSelectedYear)
-			.map((courses) => courses.id)
-			.includes(userCourses.freshman[i].id)
-	) {
-		console.log(`${userCourses.freshman[i].name} is allowed`);
-	} else {
-		console.log(`${userCourses.freshman[i].name} doesn't have the required prerequisites! Removing from list.`);
-		deletionList.push(userCourses.freshman[i].name);
-	}
-}
-for (let i = 0; i < deletionList.length; i++) {
-	userCourses.freshman.splice(
-		userCourses.freshman.findIndex(function (course, index) {
-			if (course.id == deletionList[i].id) {
-				return true;
-			}
-		}),
-		1
-	);
-}
-console.log(userCourses.preHighschool.map((courses) => courses.name));
-console.log(userCourses.freshman.map((courses) => courses.name));
+addCourses(["A1", "B", "G"]);
+console.log(userCourses.preHighschool);
 currentSelectedYear += 1;
