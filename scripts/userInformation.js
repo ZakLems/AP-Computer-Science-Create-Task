@@ -52,21 +52,37 @@ function selectableCoursesBasedOnPrerequisites(courses, year) {
 	} else if (year == 4) {
 		var allCourses = courses["preHighschool"].concat(courses["freshman"], courses["sophomore"], courses["junior"]);
 	}
-	var preRequisiteList = [];
+	var allowedCourses = [];
 	if (year == 0) {
-		preRequisiteList = data.filter((course) => course.prerequisites == "");
+		allowedCourses = data.filter((course) => course.prerequisites == "");
 	} else {
 		for (let i = 0; i < allCourses.length; i++) {
-			preRequisiteList = preRequisiteList.concat(
+			allowedCourses = allowedCourses.concat(
 				data.filter((course) => course.prerequisites == allCourses[i].id || course.prerequisites == "")
 			);
 		}
 	}
 
-	return preRequisiteList.filter(onlyUnique);
+	return allowedCourses.filter(onlyUnique);
 }
 
-function selectablecoursesBasedOnGradeLevel() {}
+function selectablecoursesBasedOnGradeLevel(year) {
+	var allowedCourses = [];
+	if (year == 1) {
+		allowedCourses = data.filter((course) => course.gradeLevel.includes(9));
+	}
+	if (year == 2) {
+		allowedCourses = data.filter((course) => course.gradeLevel.includes(10));
+	}
+	if (year == 3) {
+		allowedCourses = data.filter((course) => course.gradeLevel.includes(11));
+	}
+	if (year == 4) {
+		allowedCourses = data.filter((course) => course.gradeLevel.includes(12));
+	}
+
+	return allowedCourses.filter(onlyUnique);
+}
 
 const graduationRequirements = [
 	"Fine Art",
@@ -123,18 +139,38 @@ function addCourses(coursesToAdd) {
 			deletionList.push(userCourses[currentSelectedYearName][i].name);
 		}
 	}
+
+	if (currentSelectedYearName != "preHighschool") {
+		for (let i = 0; i < userCourses[currentSelectedYearName].length; i++) {
+			if (
+				selectablecoursesBasedOnGradeLevel(currentSelectedYear)
+					.map((courses) => courses.id)
+					.includes(userCourses[currentSelectedYearName][i].id)
+			) {
+				console.log(
+					`${userCourses[currentSelectedYearName][i].name} is in the appropriate grade level for the student.`
+				);
+			} else {
+				console.log(
+					`${userCourses[currentSelectedYearName][i].name} doesn't provide classes for the student's grade level! Removing from list.`
+				);
+				deletionList.push(userCourses[currentSelectedYearName][i].name);
+			}
+		}
+	}
+	deletionList = deletionList.filter(function (e) {
+		return e != "Algebra 1";
+	});
 	for (let i = 0; i < deletionList.length; i++) {
-		userCourses[currentSelectedYearName].splice(
-			userCourses[currentSelectedYearName].findIndex(function (course, index) {
-				if (course.id == deletionList[i].id) {
-					return true;
-				}
-			}),
-			1
-		);
+		userCourses[currentSelectedYearName] = userCourses[currentSelectedYearName].filter(function (e) {
+			return e.name != deletionList[i];
+		});
 	}
 }
+currentSelectedYear = 1;
 for (let i = 0; i < 1; i++) {
-	addCourses(["A1", "B", "G"]);
+	addCourses(["G", "A1", "B", "E9", "MP1"]);
 	currentSelectedYear += 1;
 }
+
+console.log(userCourses);

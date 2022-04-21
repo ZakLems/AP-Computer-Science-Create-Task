@@ -5,6 +5,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART2",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -14,6 +15,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -23,6 +25,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -32,6 +35,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -41,6 +45,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "C1",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -50,6 +55,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -59,6 +65,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "CG1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -68,6 +75,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -77,6 +85,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "D1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -86,6 +95,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "D2",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -95,6 +105,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -104,6 +115,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "DP1",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -113,6 +125,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -122,6 +135,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -131,6 +145,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -140,6 +155,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "PH1",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -149,6 +165,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -158,6 +175,7 @@
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "S1",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -167,6 +185,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "PA",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -176,6 +195,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -185,6 +205,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "BL1",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -194,6 +215,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -203,6 +225,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -212,6 +235,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -221,6 +245,7 @@
 		"department": "Business",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -230,6 +255,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -239,6 +265,7 @@
 		"department": "English",
 		"graduationRequirement": "English 11",
 		"prerequisites": "E10",
+		"gradeLevel": [11],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -248,6 +275,7 @@
 		"department": "English",
 		"graduationRequirement": "English 12",
 		"prerequisites": "E11",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -257,6 +285,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [11],
 		"term": "S",
 		"type": "regular"
 	},
@@ -266,6 +295,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E9",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -275,6 +305,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "SP",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -284,6 +315,7 @@
 		"department": "English",
 		"graduationRequirement": "English 10",
 		"prerequisites": "E9",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -293,6 +325,7 @@
 		"department": "English",
 		"graduationRequirement": "English 11",
 		"prerequisites": "E10",
+		"gradeLevel": [11],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -302,6 +335,7 @@
 		"department": "English",
 		"graduationRequirement": "English 12",
 		"prerequisites": "E11",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -311,6 +345,7 @@
 		"department": "English",
 		"graduationRequirement": "English 9",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -320,6 +355,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -329,6 +365,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "J1",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -338,6 +375,7 @@
 		"department": "English",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -347,6 +385,7 @@
 		"department": "FACS",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -356,6 +395,7 @@
 		"department": "FACS",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -365,6 +405,7 @@
 		"department": "FACS",
 		"graduationRequirement": "Financial Literacy",
 		"prerequisites": "",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -374,6 +415,7 @@
 		"department": "FACS",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -383,6 +425,7 @@
 		"department": "FACS",
 		"graduationRequirement": "Elective",
 		"prerequisites": "FN",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -392,6 +435,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
+		"gradeLevel": [11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -401,6 +445,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Health",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -410,6 +455,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -419,6 +465,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Elective",
 		"prerequisites": "PF",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -428,6 +475,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Physical Education",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -437,6 +485,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
+		"gradeLevel": [11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -446,6 +495,7 @@
 		"department": "Health/PE",
 		"graduationRequirement": "Elective",
 		"prerequisites": "PF",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -455,6 +505,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "",
+		"gradeLevel": [9, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -464,6 +515,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "G",
+		"gradeLevel": [10, 11],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -473,6 +525,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "PC",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -482,6 +535,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -491,6 +545,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "A1",
+		"gradeLevel": [9, 10],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -500,6 +555,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -509,6 +565,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -518,6 +575,7 @@
 		"department": "Math",
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
+		"gradeLevel": [10, 11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -527,6 +585,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -536,6 +595,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -545,6 +605,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [11],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -554,6 +615,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -563,6 +625,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -572,6 +635,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -581,6 +645,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [11],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -590,6 +655,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -599,6 +665,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -608,6 +675,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -617,6 +685,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -626,6 +695,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [11],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -635,6 +705,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -644,6 +715,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -653,6 +725,7 @@
 		"department": "Music/Dance",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -662,6 +735,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "C",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -671,6 +745,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "ES",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -680,6 +755,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "P",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -689,6 +765,7 @@
 		"department": "Science",
 		"graduationRequirement": "Biology",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -698,6 +775,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -707,6 +785,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -716,6 +795,7 @@
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -725,6 +805,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Elective",
 		"prerequisites": "WH",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -734,6 +815,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -743,6 +825,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -752,6 +835,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "World History",
 		"prerequisites": "G",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -761,6 +845,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -770,6 +855,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -779,6 +865,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
+		"gradeLevel": [11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -788,6 +875,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
+		"gradeLevel": [11, 12],
 		"term": "S",
 		"type": "regular"
 	},
@@ -797,6 +885,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "U.S. History",
 		"prerequisites": "",
+		"gradeLevel": [9],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -806,6 +895,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "World History",
 		"prerequisites": "G",
+		"gradeLevel": [10],
 		"term": "FY",
 		"type": "honorsAvailable"
 	},
@@ -815,6 +905,7 @@
 		"department": "Technology",
 		"graduationRequirement": "Elective",
 		"prerequisites": "APCS",
+		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -824,6 +915,7 @@
 		"department": "Technology",
 		"graduationRequirement": "Elective",
 		"prerequisites": "FCS",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "AP"
 	},
@@ -833,6 +925,7 @@
 		"department": "Technology",
 		"graduationRequirement": "Technology Education",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -842,6 +935,7 @@
 		"department": "Technology",
 		"graduationRequirement": "Technology Education",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -851,6 +945,7 @@
 		"department": "Technology",
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
+		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -860,6 +955,7 @@
 		"department": "World Lang",
 		"graduationRequirement": "Language",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -869,6 +965,7 @@
 		"department": "World Lang",
 		"graduationRequirement": "Language",
 		"prerequisites": "F1",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -878,6 +975,7 @@
 		"department": "World Lang",
 		"graduationRequirement": "Language",
 		"prerequisites": "F2",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -887,6 +985,7 @@
 		"department": "World Lang",
 		"graduationRequirement": "Language",
 		"prerequisites": "",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	},
@@ -896,6 +995,7 @@
 		"department": "World Lang",
 		"graduationRequirement": "Language",
 		"prerequisites": "S1",
+		"gradeLevel": [9, 10, 11, 12],
 		"term": "FY",
 		"type": "regular"
 	}
