@@ -754,7 +754,7 @@
 		"id": "APP",
 		"department": "Science",
 		"graduationRequirement": "Science",
-		"prerequisites": "P",
+		"prerequisites": "Science",
 		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "AP"
@@ -791,7 +791,7 @@
 	},
 	{
 		"name": "Physics",
-		"id": "P",
+		"id": "PY",
 		"department": "Science",
 		"graduationRequirement": "Science",
 		"prerequisites": "B",

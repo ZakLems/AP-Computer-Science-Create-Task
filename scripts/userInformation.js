@@ -14,13 +14,11 @@ try {
 //basic user information
 function userBasics(name, gradeLevel, studentID, coursesTaken) {
 	this.name = name;
-	this.gradeLevel = gradeLevel;
 	this.studentID = studentID;
 }
-const userInfo = new userBasics("Razak Diallo", 9, 100342969);
-console.log(userInfo);
+const userInfo = new userBasics("Razak Diallo", 100342969);
 
-//add courses declarations/functions
+//add courses declarations/misc. functions
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
 }
@@ -33,24 +31,39 @@ function courseIDtoCourseOBJ(courseID) {
 	let found = data[foundIndex];
 	return found;
 }
-function courseArraytoCourseArrayOBJ(courseArray) {
+function courseArrayToCourseArrayOBJ(courseArray) {
 	newArray = [];
 	for (let i = 0; i < courseArray.length; i++) {
 		newArray.push(courseIDtoCourseOBJ(courseArray[i]));
 	}
 	return newArray;
 }
+function yearNumberToName(year) {
+	let currentSelectedYearName;
+	if (year == 0) {
+		currentSelectedYearName = "preHighSchool";
+	} else if (year == 1) {
+		currentSelectedYearName = "freshman";
+	} else if (year == 2) {
+		currentSelectedYearName = "sophomore";
+	} else if (year == 3) {
+		currentSelectedYearName = "junior";
+	} else if (year == 4) {
+		currentSelectedYearName = "senior";
+	}
+	return currentSelectedYearName;
+}
 
 //Validation (prerequisites, grade level)
 function selectableCoursesBasedOnPrerequisites(courses, year) {
 	if (year == 1) {
-		allCourses = courses["preHighschool"];
+		allCourses = courses["preHighSchool"];
 	} else if (year == 2) {
-		var allCourses = courses["preHighschool"].concat(courses["freshman"]);
+		var allCourses = courses["preHighSchool"].concat(courses["freshman"]);
 	} else if (year == 3) {
-		var allCourses = courses["preHighschool"].concat(courses["freshman"], courses["sophomore"]);
+		var allCourses = courses["preHighSchool"].concat(courses["freshman"], courses["sophomore"]);
 	} else if (year == 4) {
-		var allCourses = courses["preHighschool"].concat(courses["freshman"], courses["sophomore"], courses["junior"]);
+		var allCourses = courses["preHighSchool"].concat(courses["freshman"], courses["sophomore"], courses["junior"]);
 	}
 	var allowedCourses = [];
 	if (year == 0 || allCourses.length == 0) {
@@ -83,25 +96,14 @@ function selectableCoursesBasedOnGradeLevel(year) {
 	return allowedCourses.filter(onlyUnique);
 }
 
+//course addition
 var currentSelectedYear = 0;
-let userCourses = { preHighschool: [], freshman: [], sophomore: [], junior: [], senior: [] };
-
+let userCourses = { preHighSchool: [], freshman: [], sophomore: [], junior: [], senior: [] };
 function addCourses(coursesToAdd) {
 	//determine current selected year name
-	let currentSelectedYearName;
-	if (currentSelectedYear == 0) {
-		currentSelectedYearName = "preHighschool";
-	} else if (currentSelectedYear == 1) {
-		currentSelectedYearName = "freshman";
-	} else if (currentSelectedYear == 2) {
-		currentSelectedYearName = "sophomore";
-	} else if (currentSelectedYear == 3) {
-		currentSelectedYearName = "junior";
-	} else if (currentSelectedYear == 4) {
-		currentSelectedYearName = "senior";
-	}
+	let currentSelectedYearName = yearNumberToName(currentSelectedYear);
 	//add selected courses as object as referenced from data variable to master course list
-	userCourses[currentSelectedYearName] = courseArraytoCourseArrayOBJ(coursesToAdd);
+	userCourses[currentSelectedYearName] = courseArrayToCourseArrayOBJ(coursesToAdd);
 
 	//determine if user can take selected courses based on prerequisites and grades allowed to take course. Remove if lacking required prerequisites or not offered in grade (with exceptions for courses that require prerequisites to allow pre-highschool advancement).
 	let deletionList = [];
@@ -121,7 +123,7 @@ function addCourses(coursesToAdd) {
 		}
 	}
 	console.log("");
-	if (currentSelectedYearName != "preHighschool") {
+	if (currentSelectedYearName != "preHighSchool") {
 		for (let i = 0; i < userCourses[currentSelectedYearName].length; i++) {
 			if (userCourses[currentSelectedYearName][i].prerequisites == "") {
 				if (
@@ -147,11 +149,22 @@ function addCourses(coursesToAdd) {
 	});
 }
 currentSelectedYear = 1;
-for (let i = 0; i < 1; i++) {
+/*for (let i = 0; i < 1; i++) {
 	addCourses(["A1", "B", "E9", "MP1", "CS", "G"]);
 	currentSelectedYear += 1;
-}
+}*/
 
+userCourses = {
+	preHighSchool: ["A1"],
+	freshman: ["G", "B", "ART1", "E9", "H1", "PF", "FN", "UH", "FT"],
+	sophomore: ["A2", "PY", "ART2", "E10", "APG", "F1", "DP1", "E1"],
+	junior: ["PC", "APP", "APA", "CG1", "APLA", "WH", "E2"],
+	senior: ["APC", "CG2", "APLI"],
+};
+for (let i = 0; i < Object.keys(userCourses).length; i++) {
+	var currentSelectedYearName = `${yearNumberToName(i)}`;
+	userCourses[currentSelectedYearName] = courseArrayToCourseArrayOBJ(userCourses[currentSelectedYearName]);
+}
 //graduation requirements
 const graduationRequirements = [
 	"Fine Art",
@@ -171,3 +184,70 @@ const graduationRequirements = [
 	"Technology Education",
 	"Language",
 ];
+function verifyGraduationRequirementsMet(courseList) {
+	var acceptable = true;
+	function camelCaseToSentenceCase(text) {
+		return text
+			.replace(/([A-Z])/g, (match) => ` ${match}`)
+			.replace(/^./, (match) => match.toUpperCase())
+			.trim();
+	}
+	var languageCredits = 0;
+	for (let i = 0; i < Object.keys(courseList).length; i++) {
+		var currentSelectedYearName = `${yearNumberToName(i)}`;
+		if (currentSelectedYearName != "preHighSchool") {
+			if (
+				courseList[currentSelectedYearName].map((courses) => courses.graduationRequirement).includes("Math") != true
+			) {
+				console.log(`Your ${camelCaseToSentenceCase(currentSelectedYearName)} year is missing a math course!`);
+				acceptable = false;
+			}
+			if (courseList[currentSelectedYearName].map((courses) => courses.graduationRequirement.includes("Language"))) {
+				languageCredits =
+					languageCredits +
+					courseList[currentSelectedYearName]
+						.map((courses) => courses.graduationRequirement)
+						.filter((v) => v === "Language").length;
+			}
+		}
+	}
+	if (!(languageCredits > 2)) {
+		console.log(`You are missing ${2 - languageCredits} language credits!`);
+	}
+	var allCourses = courseList["preHighSchool"].concat(
+		courseList["freshman"],
+		courseList["sophomore"],
+		courseList["junior"],
+		courseList["senior"]
+	);
+	allGraduationReq = allCourses.map((courses) => courses.graduationRequirement);
+	missingGraduationReq = graduationRequirements.filter((n) => !allGraduationReq.includes(n));
+	if (missingGraduationReq.length > 0) {
+		for (let i = 0; i < missingGraduationReq.length; i++) {
+			console.log(`Your ${missingGraduationReq[i]} credit is missing!`);
+		}
+		acceptable = false;
+	}
+
+	console.log(acceptable);
+}
+verifyGraduationRequirementsMet(userCourses);
+
+//calculate estimated credits
+function estimatedCreditsCalculator(courseList) {
+	var totalCredits = 0;
+	for (let i = 0; i < Object.keys(courseList).length; i++) {
+		var currentSelectedYearName = `${yearNumberToName(i)}`;
+
+		for (let o = 0; o < courseList[currentSelectedYearName].length; o++) {
+			var currentSelectedYearName = `${yearNumberToName(i)}`;
+			if (courseList[currentSelectedYearName][o].term == "FY") {
+				totalCredits = totalCredits + 1;
+			} else if (courseList[currentSelectedYearName][o].term == "S") {
+				totalCredits = totalCredits + 0.5;
+			}
+		}
+	}
+	return totalCredits;
+}
+console.log(estimatedCreditsCalculator(userCourses));
