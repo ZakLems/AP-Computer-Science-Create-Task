@@ -11,13 +11,6 @@ try {
 	console.log(err);
 }
 
-//basic user information
-function userBasics(name, gradeLevel, studentID, coursesTaken) {
-	this.name = name;
-	this.studentID = studentID;
-}
-const userInfo = new userBasics("Razak Diallo", 100342969);
-
 //add courses declarations/misc. functions
 function onlyUnique(value, index, self) {
 	return self.indexOf(value) === index;
@@ -104,7 +97,6 @@ function addCourses(coursesToAdd) {
 	let currentSelectedYearName = yearNumberToName(currentSelectedYear);
 	//add selected courses as object as referenced from data variable to master course list
 	userCourses[currentSelectedYearName] = courseArrayToCourseArrayOBJ(coursesToAdd);
-
 	//determine if user can take selected courses based on prerequisites and grades allowed to take course. Remove if lacking required prerequisites or not offered in grade (with exceptions for courses that require prerequisites to allow pre-highschool advancement).
 	let deletionList = [];
 
@@ -148,23 +140,7 @@ function addCourses(coursesToAdd) {
 		return !deletionList.includes(e.id);
 	});
 }
-currentSelectedYear = 1;
-/*for (let i = 0; i < 1; i++) {
-	addCourses(["A1", "B", "E9", "MP1", "CS", "G"]);
-	currentSelectedYear += 1;
-}*/
 
-userCourses = {
-	preHighSchool: ["A1"],
-	freshman: ["G", "B", "ART1", "E9", "H1", "PF", "FN", "UH", "FT"],
-	sophomore: ["A2", "PY", "ART2", "E10", "APG", "F1", "DP1", "E1"],
-	junior: ["PC", "APP", "APA", "CG1", "APLA", "WH", "E2"],
-	senior: ["APC", "CG2", "APLI"],
-};
-for (let i = 0; i < Object.keys(userCourses).length; i++) {
-	var currentSelectedYearName = `${yearNumberToName(i)}`;
-	userCourses[currentSelectedYearName] = courseArrayToCourseArrayOBJ(userCourses[currentSelectedYearName]);
-}
 //graduation requirements
 const graduationRequirements = [
 	"Fine Art",
@@ -184,6 +160,7 @@ const graduationRequirements = [
 	"Technology Education",
 	"Language",
 ];
+
 function verifyGraduationRequirementsMet(courseList) {
 	var acceptable = true;
 	function camelCaseToSentenceCase(text) {
@@ -231,7 +208,6 @@ function verifyGraduationRequirementsMet(courseList) {
 
 	console.log(acceptable);
 }
-verifyGraduationRequirementsMet(userCourses);
 
 //calculate estimated credits
 function estimatedCreditsCalculator(courseList) {
@@ -250,4 +226,23 @@ function estimatedCreditsCalculator(courseList) {
 	}
 	return totalCredits;
 }
-console.log(estimatedCreditsCalculator(userCourses));
+
+//Program flow
+function linebreak() {
+	console.log();
+}
+var finished = false;
+while (finished == false) {
+	console.log(
+		"\n" +
+			"Welcome to the Wise Pather, your digital assistant through the entirety of your high school career. This program gives you the ability to view the courses you wish to take throughout your high school career." +
+			"\n\n" +
+			"Let's start with some basic information"
+	);
+	var userName = prompt("Name: ");
+	linebreak();
+	console.log(`Hello ${userName}! Let's get started with any classes you may have taken before high school.`);
+	linebreak();
+	addCourses(prompt("Input the id of the courses you would like (separated by commas): ").split(","));
+	break;
+}
