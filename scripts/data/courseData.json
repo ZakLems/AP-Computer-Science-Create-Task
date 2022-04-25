@@ -224,7 +224,7 @@
 		"id": "E2",
 		"department": "Business",
 		"graduationRequirement": "Elective",
-		"prerequisites": "",
+		"prerequisites": "E1",
 		"gradeLevel": [10, 11, 12],
 		"term": "FY",
 		"type": "regular"
@@ -234,7 +234,7 @@
 		"id": "E3",
 		"department": "Business",
 		"graduationRequirement": "Elective",
-		"prerequisites": "",
+		"prerequisites": "E2",
 		"gradeLevel": [11, 12],
 		"term": "FY",
 		"type": "regular"
