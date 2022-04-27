@@ -96,13 +96,16 @@ function selectableCoursesBasedOnGradeLevel(year) {
 }
 
 //course addition
-var currentSelectedYear = 1;
+var currentSelectedYear = 0;
 let userCourses = { preHighSchool: [], freshman: [], sophomore: [], junior: [], senior: [] };
-function addCourses(courseToAdd) {
+function addCourses(courseToAdd, semesterLoopFix) {
 	//determine current selected year name
 	let currentSelectedYearName = yearNumberToName(currentSelectedYear);
 	//add selected courses as object as referenced from data variable to master course list
 	courseToAdd = courseIDtoCourseOBJ(courseToAdd);
+	while (courseToAdd == undefined) {
+		courseToAdd = courseIDtoCourseOBJ(prompt("ID invalid please try again: ").toUpperCase());
+	}
 	//determine if user can take selected courses based on prerequisites and grades allowed to take course. Remove if lacking required prerequisites or not offered in grade (with exceptions for grade for courses that require prerequisites to allow pre-highschool advancement).
 
 	if (
@@ -110,7 +113,6 @@ function addCourses(courseToAdd) {
 			.map((courses) => courses.id)
 			.includes(courseToAdd.id)
 	) {
-		console.log(`${courseToAdd.name} has the required prerequisites`);
 		if (currentSelectedYearName != "preHighSchool") {
 			if (courseToAdd.prerequisites == "") {
 				if (
@@ -118,40 +120,44 @@ function addCourses(courseToAdd) {
 						.map((courses) => courses.id)
 						.includes(courseToAdd.id)
 				) {
-					console.log(`${courseToAdd.name} is in the appropriate grade level for the student.`);
-					lineBreak();
 					console.log(
 						`${courseToAdd.name} has successfully been added to ${camelCaseToSentenceCase(
 							currentSelectedYearName
 						)} year!`
 					);
+					userCourses[currentSelectedYearName].push(courseToAdd);
 				} else {
 					addCourses(
 						prompt(
-							`${courseToAdd.name} doesn't provide classes for the student's grade level! Please input another course:`
-						)
+							`${courseToAdd.name} doesn't provide classes for the student's grade level! Please input another course: `
+						),
+						0
 					);
 				}
 			}
 		} else {
 			console.log(`${courseToAdd.name} has been successfully added to Pre-High School courses!`);
+
+			userCourses[currentSelectedYearName].push(courseToAdd);
 		}
 	} else {
-		addCourses(prompt(`${courseToAdd.name} doesn't have the required prerequisites! Please input another course: `));
+		addCourses(prompt(`${courseToAdd.name} doesn't have the required prerequisites! Please input another course: `), 0);
 	}
-	if (courseToAdd.term == "S") {
-		var pairedSemesterCourse = prompt(
-			"Select another semester long course to be added that is in the same department of the course you selected"
-		);
-		//put variable to only allow semester courses to be selected
-		//semester courses are in an infinite loop ruh roh
-		addCourses(pairedSemesterCourse);
-	}
-	userCourses[currentSelectedYearName].push(courseToAdd);
-}
 
-addCourses("H1");
-console.log(userCourses);
+	//semester course addition
+	if (courseToAdd.term == "S" && semesterLoopFix != 1) {
+		var semesterCourses = data.filter((course) => course.term == "S");
+		semesterCourses = semesterCourses.filter((course) => course.department == courseToAdd.department);
+		var pairedSemesterCourse = prompt(
+			"Input the ID of another semester long course to be added that is in the same department of the course you selected: "
+		);
+		while (!semesterCourses.includes(courseIDtoCourseOBJ(pairedSemesterCourse))) {
+			pairedSemesterCourse = prompt("Course cannot be added. Please try again: ");
+		}
+		//semester courses are in an infinite loop ruh roh
+		addCourses(pairedSemesterCourse.toUpperCase(), 1);
+	}
+}
 
 //graduation requirements
 const graduationRequirements = [
@@ -247,8 +253,44 @@ while (finished == false) {
 	);
 	var userName = prompt("Name: ");
 	lineBreak();
-	console.log(`Hello ${userName}! Let's get started with any classes you may have taken before high school.`);
+	console.log(`Hello ${userName}!`);
 	lineBreak();
-
+	if (prompt("Did you take an classes before highschool Y/N: ").toUpperCase() == "Y".toUpperCase()) {
+		let complete;
+		while (complete != "Y") {
+			addCourses(prompt("Input course:"));
+			complete = prompt("Is that all? Y/N: ").toUpperCase();
+		}
+		console.log(
+			`The following courses have been added to your course list: ${userCourses.preHighSchool.map(
+				(courses) => courses.name
+			)}`
+		);
+	}
+	currentSelectedYear = currentSelectedYear + 1;
+	for (let i = 1; i < 5; i++) {
+		lineBreak();
+		console.log(`Let's look at ${yearNumberToName(i)} year.`);
+		let filledSlots = 0;
+		while (filledSlots != 16) {
+			addCourses(prompt("Input the ID of the course you would like: ").toUpperCase());
+			var courseTerms = userCourses[yearNumberToName(i)].map((courses) => courses.term);
+			let termValueArray = [];
+			for (let i = 0; i < courseTerms.length; i++) {
+				if (courseTerms[i] == "FY") {
+					termValueArray.push(2);
+				} else {
+					termValueArray.push(1);
+				}
+			}
+			filledSlots = termValueArray.reduce((partialSum, a) => partialSum + a, 0);
+			console.log(
+				`Current ${camelCaseToSentenceCase(yearNumberToName(i))} courses are: ${userCourses[yearNumberToName(i)].map(
+					(courses) => courses.name
+				)}`
+			);
+		}
+		console.log(`${camelCaseToSentenceCase(yearNumberToName(i))} year is complete!`);
+	}
 	break;
 }
