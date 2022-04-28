@@ -6,8 +6,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART2",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "Art 1",
@@ -16,8 +15,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Art 2",
@@ -26,8 +24,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Ceramics 1",
@@ -36,8 +33,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Ceramics 2",
@@ -46,8 +42,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "C1",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Computer Graphics 1",
@@ -56,8 +51,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Computer Graphics 2",
@@ -66,8 +60,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "CG1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Drama 1",
@@ -76,8 +69,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Drama 2",
@@ -86,8 +78,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "D1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Drama 3",
@@ -96,8 +87,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "D2",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Drawing and Painting 1",
@@ -106,8 +96,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Drawing and Painting 2",
@@ -116,8 +105,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "DP1",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Media Production 1",
@@ -126,8 +114,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Media Production 2",
@@ -136,8 +123,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Photography 1",
@@ -146,8 +132,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Photography 2",
@@ -156,28 +141,25 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "PH1",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Sculpture 1",
-		"id": "S1",
+		"id": "SC1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "ART1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Sculpture 2",
-		"id": "S2",
+		"id": "SC2",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "S1",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Advanced Accounting",
@@ -186,8 +168,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "PA",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Business Law 1",
@@ -196,8 +177,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Business Law 2",
@@ -206,8 +186,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "BL1",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Entrepreneurship 1",
@@ -216,8 +195,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Entrepreneurship 2",
@@ -226,8 +204,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Entrepreneurship 3",
@@ -236,8 +213,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E2",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Principles of Accounting",
@@ -246,8 +222,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "African American Literature",
@@ -256,8 +231,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "AP English Language & Composition",
@@ -266,8 +240,7 @@
 		"graduationRequirement": "English 11",
 		"prerequisites": "E10",
 		"gradeLevel": [11],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP English Literature and Composition",
@@ -276,8 +249,7 @@
 		"graduationRequirement": "English 12",
 		"prerequisites": "E11",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "College Summit",
@@ -286,8 +258,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [11],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Creative Writing",
@@ -296,8 +267,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E9",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Debate",
@@ -306,8 +276,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "SP",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "English 10",
@@ -316,8 +285,7 @@
 		"graduationRequirement": "English 10",
 		"prerequisites": "E9",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "English 11",
@@ -326,8 +294,7 @@
 		"graduationRequirement": "English 11",
 		"prerequisites": "E10",
 		"gradeLevel": [11],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "English 12",
@@ -336,8 +303,7 @@
 		"graduationRequirement": "English 12",
 		"prerequisites": "E11",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "English 9",
@@ -346,8 +312,7 @@
 		"graduationRequirement": "English 9",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "Journalism 1",
@@ -356,8 +321,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Journalism 2",
@@ -366,8 +330,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "J1",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Speech",
@@ -376,8 +339,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Fashion Design 1",
@@ -386,8 +348,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Fashion Design 2",
@@ -396,8 +357,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Financial Literacy",
@@ -406,8 +366,7 @@
 		"graduationRequirement": "Financial Literacy",
 		"prerequisites": "",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Food and Nutrition",
@@ -416,8 +375,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "International Cuisine",
@@ -426,8 +384,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "FN",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Family Health",
@@ -436,8 +393,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
 		"gradeLevel": [11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Health 1",
@@ -446,8 +402,7 @@
 		"graduationRequirement": "Health",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Heath 2",
@@ -456,8 +411,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Lifetime Sports",
@@ -466,8 +420,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "PF",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Personal Fitness",
@@ -476,8 +429,7 @@
 		"graduationRequirement": "Physical Education",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Sports Medicine",
@@ -486,8 +438,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "H1",
 		"gradeLevel": [11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Team Sports",
@@ -496,8 +447,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "PF",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Algebra 1",
@@ -506,8 +456,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "",
 		"gradeLevel": [9, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Algebra 2",
@@ -516,8 +465,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "G",
 		"gradeLevel": [10, 11],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "AP Calculus AB",
@@ -526,8 +474,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "PC",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP Statistics",
@@ -536,8 +483,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "Geometry",
@@ -546,8 +492,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "A1",
 		"gradeLevel": [9, 10],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Pre Calculus",
@@ -556,8 +501,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "Probability",
@@ -566,8 +510,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Trigonometry",
@@ -576,8 +519,7 @@
 		"graduationRequirement": "Math",
 		"prerequisites": "A2",
 		"gradeLevel": [10, 11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Band 1",
@@ -586,8 +528,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Band 2",
@@ -596,8 +537,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Band 3",
@@ -606,8 +546,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [11],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Band 4",
@@ -616,8 +555,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Dance 1",
@@ -626,8 +564,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Dance 2",
@@ -636,8 +573,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Dance 3",
@@ -646,8 +582,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [11],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Dance 4",
@@ -656,8 +591,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Guitar",
@@ -666,8 +600,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Orchestra 1",
@@ -676,8 +609,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Orchestra 2",
@@ -686,8 +618,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Orchestra 3",
@@ -696,8 +627,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [11],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Orchestra 4",
@@ -706,8 +636,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Piano",
@@ -716,8 +645,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Recording Technology",
@@ -726,8 +654,7 @@
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "AP Biology",
@@ -736,8 +663,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "C",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP Environmental Science",
@@ -746,8 +672,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "ES",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP Physics",
@@ -756,8 +681,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "Science",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "Biology",
@@ -766,8 +690,7 @@
 		"graduationRequirement": "Biology",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "Chemistry",
@@ -776,8 +699,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "Environmental Science",
@@ -786,8 +708,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Physics",
@@ -796,8 +717,7 @@
 		"graduationRequirement": "Science",
 		"prerequisites": "B",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "AP Human Geography",
@@ -806,8 +726,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "WH",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP Psychology",
@@ -816,8 +735,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP United States Government and Politics",
@@ -826,8 +744,7 @@
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP World History",
@@ -836,8 +753,7 @@
 		"graduationRequirement": "World History",
 		"prerequisites": "G",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "Government",
@@ -846,8 +762,7 @@
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "Practical Law",
@@ -856,8 +771,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Psychology",
@@ -866,8 +780,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
 		"gradeLevel": [11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "Sociology",
@@ -876,8 +789,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "E10",
 		"gradeLevel": [11, 12],
-		"term": "S",
-		"type": "regular"
+		"term": "S"
 	},
 	{
 		"name": "U.S. History",
@@ -886,8 +798,7 @@
 		"graduationRequirement": "U.S. History",
 		"prerequisites": "",
 		"gradeLevel": [9],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "World History",
@@ -896,8 +807,7 @@
 		"graduationRequirement": "World History",
 		"prerequisites": "G",
 		"gradeLevel": [10],
-		"term": "FY",
-		"type": "honorsAvailable"
+		"term": "FY"
 	},
 	{
 		"name": "AP Computer Science A",
@@ -906,8 +816,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "APCS",
 		"gradeLevel": [11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "AP Computer Science Principles",
@@ -916,8 +825,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "FCS",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "AP"
+		"term": "FY"
 	},
 	{
 		"name": "Foundations of Computer Science",
@@ -926,8 +834,7 @@
 		"graduationRequirement": "Technology Education",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Foundations of Tech",
@@ -936,8 +843,7 @@
 		"graduationRequirement": "Technology Education",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Office Applications",
@@ -946,8 +852,7 @@
 		"graduationRequirement": "Elective",
 		"prerequisites": "",
 		"gradeLevel": [10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "French 1",
@@ -956,8 +861,7 @@
 		"graduationRequirement": "Language",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "French 2",
@@ -966,8 +870,7 @@
 		"graduationRequirement": "Language",
 		"prerequisites": "F1",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "French 3",
@@ -976,8 +879,7 @@
 		"graduationRequirement": "Language",
 		"prerequisites": "F2",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Spanish 1",
@@ -986,8 +888,7 @@
 		"graduationRequirement": "Language",
 		"prerequisites": "",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	},
 	{
 		"name": "Spanish 2",
@@ -996,7 +897,6 @@
 		"graduationRequirement": "Language",
 		"prerequisites": "S1",
 		"gradeLevel": [9, 10, 11, 12],
-		"term": "FY",
-		"type": "regular"
+		"term": "FY"
 	}
 ]

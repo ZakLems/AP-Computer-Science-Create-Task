@@ -12,6 +12,9 @@ try {
 }
 
 //add courses declarations/misc. functions
+function toSentence(arr) {
+	return arr.join(", ").replace(/,\s([^,]+)$/, " and $1");
+}
 function camelCaseToSentenceCase(text) {
 	return text
 		.replace(/([A-Z])/g, (match) => ` ${match}`)
@@ -102,19 +105,33 @@ function addCourses(courseToAdd, semesterLoopFix) {
 	//determine current selected year name
 	let currentSelectedYearName = yearNumberToName(currentSelectedYear);
 	//add selected courses as object as referenced from data variable to master course list
-	courseToAdd = courseIDtoCourseOBJ(courseToAdd);
+	courseToAdd = courseIDtoCourseOBJ(courseToAdd.toUpperCase());
 	while (courseToAdd == undefined) {
 		courseToAdd = courseIDtoCourseOBJ(prompt("ID invalid please try again: ").toUpperCase());
 	}
+	//verifies course hasn't already been taken
+	var allCourses = [];
+	if (currentSelectedYear == 1) {
+		allCourses = userCourses["preHighSchool"];
+	} else if (currentSelectedYear == 2) {
+		var allCourses = userCourses["preHighSchool"].concat(userCourses["freshman"]);
+	} else if (currentSelectedYear == 3) {
+		var allCourses = userCourses["preHighSchool"].concat(userCourses["freshman"], userCourses["sophomore"]);
+	} else if (currentSelectedYear == 4) {
+		var allCourses = userCourses["preHighSchool"].concat(
+			userCourses["freshman"],
+			userCourses["sophomore"],
+			userCourses["junior"]
+		);
+	}
 	//determine if user can take selected courses based on prerequisites and grades allowed to take course. Remove if lacking required prerequisites or not offered in grade (with exceptions for grade for courses that require prerequisites to allow pre-highschool advancement).
-
-	if (
-		selectableCoursesBasedOnPrerequisites(userCourses, currentSelectedYear)
-			.map((courses) => courses.id)
-			.includes(courseToAdd.id)
-	) {
-		if (currentSelectedYearName != "preHighSchool") {
-			if (courseToAdd.prerequisites == "") {
+	if (!allCourses.includes(courseToAdd)) {
+		if (
+			selectableCoursesBasedOnPrerequisites(userCourses, currentSelectedYear)
+				.map((courses) => courses.id)
+				.includes(courseToAdd.id)
+		) {
+			if (currentSelectedYearName != "preHighSchool") {
 				if (
 					selectableCoursesBasedOnGradeLevel(currentSelectedYear)
 						.map((courses) => courses.id)
@@ -134,14 +151,19 @@ function addCourses(courseToAdd, semesterLoopFix) {
 						0
 					);
 				}
+			} else {
+				console.log(`${courseToAdd.name} has been successfully added to Pre-High School courses!`);
+
+				userCourses[currentSelectedYearName].push(courseToAdd);
 			}
 		} else {
-			console.log(`${courseToAdd.name} has been successfully added to Pre-High School courses!`);
-
-			userCourses[currentSelectedYearName].push(courseToAdd);
+			addCourses(
+				prompt(`${courseToAdd.name} doesn't have the required prerequisites! Please input another course: `),
+				0
+			);
 		}
 	} else {
-		addCourses(prompt(`${courseToAdd.name} doesn't have the required prerequisites! Please input another course: `), 0);
+		addCourses(prompt(`You have already selected ${courseToAdd.name}! Please input another course: `));
 	}
 
 	//semester course addition
@@ -150,22 +172,22 @@ function addCourses(courseToAdd, semesterLoopFix) {
 		semesterCourses = semesterCourses.filter((course) => course.department == courseToAdd.department);
 		var pairedSemesterCourse = prompt(
 			"Input the ID of another semester long course to be added that is in the same department of the course you selected: "
-		);
+		).toUpperCase();
 		while (!semesterCourses.includes(courseIDtoCourseOBJ(pairedSemesterCourse))) {
-			pairedSemesterCourse = prompt("Course cannot be added. Please try again: ");
+			pairedSemesterCourse = prompt("Course cannot be added. Please try again: ").toUpperCase();
 		}
 		//semester courses are in an infinite loop ruh roh
-		addCourses(pairedSemesterCourse.toUpperCase(), 1);
+		addCourses(pairedSemesterCourse, 1);
 	}
 }
 
 //graduation requirements
 const graduationRequirements = [
 	"Fine Art",
+	"English 9",
+	"English 10",
 	"English 11",
 	"English 12",
-	"English 10",
-	"English 9",
 	"Financial Literacy",
 	"Health",
 	"Physical Education",
@@ -178,7 +200,6 @@ const graduationRequirements = [
 	"Technology Education",
 	"Language",
 ];
-
 function verifyGraduationRequirementsMet(courseList) {
 	var acceptable = true;
 	var languageCredits = 0;
@@ -217,80 +238,70 @@ function verifyGraduationRequirementsMet(courseList) {
 		}
 		acceptable = false;
 	}
-
-	console.log(acceptable);
-}
-
-//calculate estimated credits
-function estimatedCreditsCalculator(courseList) {
-	var totalCredits = 0;
-	for (let i = 0; i < Object.keys(courseList).length; i++) {
-		var currentSelectedYearName = `${yearNumberToName(i)}`;
-
-		for (let o = 0; o < courseList[currentSelectedYearName].length; o++) {
-			var currentSelectedYearName = `${yearNumberToName(i)}`;
-			if (courseList[currentSelectedYearName][o].term == "FY") {
-				totalCredits = totalCredits + 1;
-			} else if (courseList[currentSelectedYearName][o].term == "S") {
-				totalCredits = totalCredits + 0.5;
-			}
-		}
+	if (!acceptable) {
+		console.log("Course selection would not meet graduation requirements. Try again!");
+	} else if (acceptable) {
+		console.log("Course selection meets graduation requirements!");
 	}
-	return totalCredits;
 }
 
 //User Inputs
 function lineBreak() {
 	console.log();
 }
-var finished = false;
-while (finished == false) {
+console.log(
+	"\n" +
+		"Welcome to the Wise Pather, your digital assistant through the entirety of your high school career. This program gives you the ability to view the courses you wish to take throughout your high school career." +
+		"\n\n" +
+		"Let's start with some basic information"
+);
+var userName = prompt("Name: ");
+lineBreak();
+console.log(`Hello ${userName}!`);
+lineBreak();
+if (prompt("Did you take an classes before highschool Y/N: ").toUpperCase() == "Y".toUpperCase()) {
+	let complete;
+	while (complete != "N") {
+		addCourses(prompt("Input course:"));
+		complete = prompt("Any more? Y/N: ").toUpperCase();
+	}
 	console.log(
-		"\n" +
-			"Welcome to the Wise Pather, your digital assistant through the entirety of your high school career. This program gives you the ability to view the courses you wish to take throughout your high school career." +
-			"\n\n" +
-			"Let's start with some basic information"
+		`The following courses have been added to your course list: ${userCourses.preHighSchool.map(
+			(courses) => courses.name
+		)}`
 	);
-	var userName = prompt("Name: ");
+}
+currentSelectedYear = currentSelectedYear + 1;
+for (let i = 1; i < 2; i++) {
 	lineBreak();
-	console.log(`Hello ${userName}!`);
-	lineBreak();
-	if (prompt("Did you take an classes before highschool Y/N: ").toUpperCase() == "Y".toUpperCase()) {
-		let complete;
-		while (complete != "Y") {
-			addCourses(prompt("Input course:"));
-			complete = prompt("Is that all? Y/N: ").toUpperCase();
+	console.log(`Let's look at ${yearNumberToName(i)} year.`);
+	let filledSlots = 0;
+	while (filledSlots != 16) {
+		lineBreak();
+		addCourses(prompt("Input the ID of the course you would like: ").toUpperCase());
+		var courseTerms = userCourses[yearNumberToName(i)].map((courses) => courses.term);
+		let termValueArray = [];
+		for (let i = 0; i < courseTerms.length; i++) {
+			if (courseTerms[i] == "FY") {
+				termValueArray.push(2);
+			} else {
+				termValueArray.push(1);
+			}
 		}
+		filledSlots = termValueArray.reduce((partialSum, a) => partialSum + a, 0);
 		console.log(
-			`The following courses have been added to your course list: ${userCourses.preHighSchool.map(
-				(courses) => courses.name
-			)}`
+			`Current ${camelCaseToSentenceCase(yearNumberToName(i))} courses are: ${toSentence(
+				userCourses[yearNumberToName(i)].map((courses) => courses.name)
+			)} | ${(filledSlots / 2).toString()} / 8`
 		);
 	}
-	currentSelectedYear = currentSelectedYear + 1;
-	for (let i = 1; i < 5; i++) {
-		lineBreak();
-		console.log(`Let's look at ${yearNumberToName(i)} year.`);
-		let filledSlots = 0;
-		while (filledSlots != 16) {
-			addCourses(prompt("Input the ID of the course you would like: ").toUpperCase());
-			var courseTerms = userCourses[yearNumberToName(i)].map((courses) => courses.term);
-			let termValueArray = [];
-			for (let i = 0; i < courseTerms.length; i++) {
-				if (courseTerms[i] == "FY") {
-					termValueArray.push(2);
-				} else {
-					termValueArray.push(1);
-				}
-			}
-			filledSlots = termValueArray.reduce((partialSum, a) => partialSum + a, 0);
-			console.log(
-				`Current ${camelCaseToSentenceCase(yearNumberToName(i))} courses are: ${userCourses[yearNumberToName(i)].map(
-					(courses) => courses.name
-				)}`
-			);
-		}
-		console.log(`${camelCaseToSentenceCase(yearNumberToName(i))} year is complete!`);
-	}
-	break;
+	console.log(`${camelCaseToSentenceCase(yearNumberToName(i))} year is complete!`);
 }
+for (let i = 0; i < 5; i++) {
+	console.log(camelCaseToSentenceCase(yearNumberToName(i) + " year courses:"));
+	userCourses[yearNumberToName(i)].forEach((element) => {
+		console.log(element.name);
+	});
+	lineBreak();
+}
+verifyGraduationRequirementsMet(userCourses);
