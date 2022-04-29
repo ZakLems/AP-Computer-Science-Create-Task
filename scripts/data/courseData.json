@@ -64,7 +64,7 @@
 	},
 	{
 		"name": "Drama 1",
-		"id": "D1",
+		"id": "DR1",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "",
@@ -73,7 +73,7 @@
 	},
 	{
 		"name": "Drama 2",
-		"id": "D2",
+		"id": "DR2",
 		"department": "Art",
 		"graduationRequirement": "Fine Art",
 		"prerequisites": "D1",
@@ -247,7 +247,7 @@
 		"id": "APLI",
 		"department": "English",
 		"graduationRequirement": "English 12",
-		"prerequisites": "E11",
+		"prerequisites": "APLA",
 		"gradeLevel": [12],
 		"term": "FY"
 	},
@@ -743,7 +743,7 @@
 		"department": "Soc Studies",
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",
-		"gradeLevel": [11, 12],
+		"gradeLevel": [10, 11, 12],
 		"term": "FY"
 	},
 	{
@@ -757,7 +757,7 @@
 	},
 	{
 		"name": "Government",
-		"id": "G",
+		"id": "GOV",
 		"department": "Soc Studies",
 		"graduationRequirement": "Government",
 		"prerequisites": "UH",

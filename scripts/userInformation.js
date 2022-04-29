@@ -221,7 +221,7 @@ function verifyGraduationRequirementsMet(courseList) {
 			}
 		}
 	}
-	if (!(languageCredits > 2)) {
+	if (!(languageCredits >= 2)) {
 		console.log(`You are missing ${2 - languageCredits} language credits!`);
 	}
 	var allCourses = courseList["preHighSchool"].concat(
@@ -246,19 +246,19 @@ function verifyGraduationRequirementsMet(courseList) {
 }
 
 //User Inputs
-function lineBreak() {
-	console.log();
+function lineBreak(color) {
+	if (color == undefined) {
+		color = "\x1b[0m";
+	}
+	console.log(color, "");
 }
 console.log(
+	"\x1b[33m",
 	"\n" +
 		"Welcome to the Wise Pather, your digital assistant through the entirety of your high school career. This program gives you the ability to view the courses you wish to take throughout your high school career." +
-		"\n\n" +
-		"Let's start with some basic information"
+		"\n"
 );
-var userName = prompt("Name: ");
-lineBreak();
-console.log(`Hello ${userName}!`);
-lineBreak();
+console.log("\x1b[31m", "");
 if (prompt("Did you take an classes before highschool Y/N: ").toUpperCase() == "Y".toUpperCase()) {
 	let complete;
 	while (complete != "N") {
@@ -271,13 +271,14 @@ if (prompt("Did you take an classes before highschool Y/N: ").toUpperCase() == "
 		)}`
 	);
 }
+
 currentSelectedYear = currentSelectedYear + 1;
-for (let i = 1; i < 2; i++) {
-	lineBreak();
+for (let i = 1; i < 5; i++) {
+	lineBreak(`\x1b[3${i + 3}m`);
 	console.log(`Let's look at ${yearNumberToName(i)} year.`);
 	let filledSlots = 0;
-	while (filledSlots != 16) {
-		lineBreak();
+	/*while (filledSlots != 16) {
+		lineBreak(`\x1b[3${i + 3}m`);
 		addCourses(prompt("Input the ID of the course you would like: ").toUpperCase());
 		var courseTerms = userCourses[yearNumberToName(i)].map((courses) => courses.term);
 		let termValueArray = [];
@@ -294,14 +295,17 @@ for (let i = 1; i < 2; i++) {
 				userCourses[yearNumberToName(i)].map((courses) => courses.name)
 			)} | ${(filledSlots / 2).toString()} / 8`
 		);
-	}
+	}*/
 	console.log(`${camelCaseToSentenceCase(yearNumberToName(i))} year is complete!`);
+	currentSelectedYear = currentSelectedYear + 1;
 }
+lineBreak("\x1b[33m");
+console.log("Summary:");
 for (let i = 0; i < 5; i++) {
 	console.log(camelCaseToSentenceCase(yearNumberToName(i) + " year courses:"));
 	userCourses[yearNumberToName(i)].forEach((element) => {
 		console.log(element.name);
 	});
-	lineBreak();
+	lineBreak("\x1b[33m");
 }
 verifyGraduationRequirementsMet(userCourses);
