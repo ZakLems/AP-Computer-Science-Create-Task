@@ -277,7 +277,7 @@ for (let i = 1; i < 5; i++) {
 	lineBreak(`\x1b[3${i + 3}m`);
 	console.log(`Let's look at ${yearNumberToName(i)} year.`);
 	let filledSlots = 0;
-	/*while (filledSlots != 16) {
+	while (filledSlots != 16) {
 		lineBreak(`\x1b[3${i + 3}m`);
 		addCourses(prompt("Input the ID of the course you would like: ").toUpperCase());
 		var courseTerms = userCourses[yearNumberToName(i)].map((courses) => courses.term);
@@ -295,7 +295,7 @@ for (let i = 1; i < 5; i++) {
 				userCourses[yearNumberToName(i)].map((courses) => courses.name)
 			)} | ${(filledSlots / 2).toString()} / 8`
 		);
-	}*/
+	}
 	console.log(`${camelCaseToSentenceCase(yearNumberToName(i))} year is complete!`);
 	currentSelectedYear = currentSelectedYear + 1;
 }
