@@ -679,7 +679,7 @@
 		"id": "APP",
 		"department": "Science",
 		"graduationRequirement": "Science",
-		"prerequisites": "Science",
+		"prerequisites": "PY",
 		"gradeLevel": [11, 12],
 		"term": "FY"
 	},
