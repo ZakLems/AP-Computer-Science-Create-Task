@@ -13,10 +13,10 @@ FCS
 
 Sophomore:
 A2
-P
+PY
 E10
-G
-CW - S
+APWH
+CW - SP
 F2 (F3 First)
 Art2
 APCS
@@ -25,10 +25,10 @@ Junior:
 PC
 APP
 APLA
-APWH
+Gov
 PH1
 APA
-PSY-S 
+PS-S
 APCSA
 
 Senior:
